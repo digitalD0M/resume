@@ -1,0 +1,181 @@
+body {
+  background-image: -moz-element(#background);
+  background-attachment:fixed;
+  font-family:monospace;
+
+}
+.hide {
+  height: 0px;
+  overflow: hidden;
+}
+#background {
+  font-size:1vw;
+  width:2vw;
+  color:teal
+}
+
+#welcome-section {
+  height:100vh;
+  background: linear-gradient(45deg, rgba(150, 150, 150, 0.7) 50%, teal);
+  margin:-10px;
+}
+h4 {
+  font-size:5.5rem;
+  margin:50px;
+  animation: icon 4s infinite;
+}
+ @keyframes icon {
+  0%, 100% { opacity:0;}
+  66% {opacity:1;}
+  86% {opacity:0;}
+} 
+
+#one {
+  position:absolute;
+  top:65px;
+  right:88px;
+  animation: icon 3s infinite;
+  color:rgba(250, 250, 250, 0.5)
+}
+
+#two {
+  position:absolute;
+  top:125px;
+  left:296px;
+  animation: icon 3500ms infinite;
+  color:rgba(10, 10, 10, 0.8)
+}
+#three {
+  position:absolute;
+  top:215px;
+  right:516px;
+  animation: icon 4500ms infinite;
+  color:rgba(10, 10, 10, 0.8)
+}
+#four {
+  position:absolute;
+  top:255px;
+  right:216px;
+  animation: icon 2500ms infinite;
+  color:rgba(250, 250, 250, 0.8)
+}
+.wrapper {
+  max-width:1000px;
+  width:100%;
+  margin:0 auto;
+}
+#navbar {
+  background:teal;
+  position:fixed;
+  width:100vw;
+  height:50px;
+  top:0;
+  left:0;
+  z-index:1;
+}
+ul {
+  display: flex;
+  justify-content:space-evenly;
+  list-style-type:none;
+}
+#navbar ul li a{
+text-decoration:none;  
+color:white;
+font-size:1.2rem;
+}
+ul li a:hover, ul li a:focus{
+  color:black;
+}
+#logo {
+  position:fixed;
+  right:5px;
+  top:0;
+  color:white;
+}
+h1 {
+  padding:55px;
+}
+#Services {
+  background:teal;
+  text-align:center;
+  display:flex;
+   justify-content:space-evenly;
+  margin:100px 0 100px 0;
+ padding:70px;
+  border-radius:50px;
+  box-shadow: 10px 10px 10px black;
+}
+.service {
+  background:rgba(150, 150, 150, 0.5);
+  min-width:300px;
+  color:white;
+  border-radius:50px;
+  
+}
+.service:hover {
+  background:black;
+}
+#projects {
+  background:rgba(150, 150, 150, 0.7);
+  width:100vw;
+  height:900px;
+  margin:-10px;
+  padding:1px;
+}
+.container {
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+  margin:50px 0 50px 0;
+ padding:20px;
+  border-radius:50px;
+  background:teal;
+}
+.project-tile {
+   background:rgba(150, 150, 150, 0.7);
+  width:200px;
+  height:200px;
+   padding:70px;
+  border-radius:50px;
+  margin:25px;
+  box-shadow: 10px 10px 10px black;  
+}
+#Contact {
+  background:white;
+  max-width:100%;
+  margin-top:70px;
+  height:200px;
+  padding:20px;
+  border-radius:50px;
+  box-shadow: 10px 10px 10px teal;
+}
+#Contact p {
+  text-align:center;
+  margin-top:130px;
+}
+
+@media (max-width:900px) {
+  #Services {
+    flex-direction:column;
+  }
+  .service {
+    margin-top:15px;
+  }
+#navbar ul {
+  justify-content:flex-start;    
+  }
+  ul li a{
+margin-left:20px;
+}
+  h4 {
+    font-size:4rem;
+  }
+}
+@media (max-width:580px) {
+ #navbar ul li a {
+    font-size:0.7rem;
+  }
+  #logo {
+    display:none;
+  }
+}
